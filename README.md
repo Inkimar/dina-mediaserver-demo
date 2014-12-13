@@ -6,12 +6,19 @@ The MediaServer-Demo has been developed with the products below ( with those exp
 Maven is used as the 'project management tool', Maven fetches all the dependencies that the Mediaserver relies on - each dependency is declared in the pom.xml-file.<br/>
 OBS: before you 'mvn clean package' , you have to create a database+user&password ( grant access ) <br/>
 
-Launch<br/>
-1) Launch the mediaserver ( the ejb- & the resteasy-module )
-2) Launch the Demo ( the server & the client )
-Test-1 : 
+## Launching
+* Launch the mediaserver ( the ejb- & the resteasy-module )
+* Launch the Demo ( the server & the client ) <br/>
+
+## Testing  
 1. request : fill in 'skata' in 'name'-field, blank in 'tags'-field
-2. response : two images
+2. response : two images ( a flying 'pica pica' + a sitting 'pica pica' )
+
+1. request : fill in 'skata' in 'name'-field, fill in 'view:flying'  in 'tags'-field
+2. response : one image ( a flying 'pica pica' )
+
+1. request : fill in 'skata' in 'name'-field, fill in 'view:sitting'  in 'tags'-field
+2. response : one image ( a sitting  'pica pica' )
 
 ## Requirements
 * Java SE 'Oracle Corporation': [JDK 1.7.0_51](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html)
