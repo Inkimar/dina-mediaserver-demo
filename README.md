@@ -4,7 +4,14 @@ DINA-WEB : MediaServer-Demo
 
 The MediaServer-Demo has been developed with the products below ( with those explicit in  versions).<br/>
 Maven is used as the 'project management tool', Maven fetches all the dependencies that the Mediaserver relies on - each dependency is declared in the pom.xml-file.<br/>
-OBS: before you 'mvn clean package' , you have to create a database+user&password ( grant access )
+OBS: before you 'mvn clean package' , you have to create a database+user&password ( grant access ) <br/>
+
+Launch<br/>
+1) Launch the mediaserver ( the ejb- & the resteasy-module )
+2) Launch the Demo ( the server & the client )
+Test-1 : 
+1. request : fill in 'skata' in 'name'-field, blank in 'tags'-field
+2. response : two images
 
 ## Requirements
 * Java SE 'Oracle Corporation': [JDK 1.7.0_51](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html)
