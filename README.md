@@ -4,7 +4,7 @@ DINA-WEB : MediaServer-Demo
 
 The MediaServer-Demo has been developed with the products below ( with those explicit in  versions).<br/>
 Maven is used as the 'project management tool', Maven fetches all the dependencies that the Mediaserver relies on - each dependency is declared in the pom.xml-file.<br/>
-OBS: before you 'mvn clean package' , you have to create a database+user&password ( grant access ) <br/>
+<b>OBS:</b>before you 'mvn clean package' , you have to create a database+user&password ( grant access ) <br/>
 
 ## Launching
 * Launch the mediaserver ( the ejb- & the resteasy-module )
@@ -55,11 +55,10 @@ Use of [liquibase](http://www.liquibase.org/) which is a database-independent li
 
 <b>MySQL or PostgreSQL</b> <br/>
 Configuration of chosen RDBMS affects the following modules/files: <br/>
-1. <b>Module 'Mediaserver-database-management'</b> <br/>
+1. <b>Module 'SimpleTaxonMock-Server'</b> <br/>
 1.1 liquibase.properties <br/>
-2. <b>Module 'MediaserverApp-ejb'</b> <br/>
-2.1 glassfish-resources.xml <br/>
-2.2 persistence.xml <br/>
+1.2 glassfish-resources.xml <br/>
+1.3 persistence.xml <br/>
 3 drop respective <database>-jdbc-jar into 'glassfish/.../lib-library' 
 
 
